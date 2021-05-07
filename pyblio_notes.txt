@@ -1,0 +1,20 @@
+# Install Anaconda or similar python package
+# Need at least Python 3
+
+# Maybe create new environment
+conda create --name pyblio python=3.7
+
+# Packages for pyblio and scopus
+conda install -c anaconda pip
+pip install pybliometrics
+pip install --upgrade gensim
+conda install -c conda-forge wordcloud
+jupyter nbextension enable --py widgetsnbextension
+
+# Create Scopus account using MIT account
+# Obtain your API Key(s) from http://dev.elsevier.com/myapikey.html
+# Login to MIT VPN before running anything else
+
+# Pyblio environment in Jupyter
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=pyblio
