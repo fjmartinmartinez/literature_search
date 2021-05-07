@@ -18,5 +18,9 @@ jupyter nbextension enable --py widgetsnbextension
 # since API key is tied to campus IP address(es)
 
 # Pyblio environment in Jupyter
+conda activate pyblio
 conda install -c anaconda ipykernel
 python -m ipykernel install --user --name=pyblio
+jupyter lab
+# Open the pybliometrics notebook and 
+# switch to pyblio environment using the dropdown on top-right 
