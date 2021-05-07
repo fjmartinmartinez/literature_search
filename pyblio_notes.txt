@@ -24,3 +24,5 @@ python -m ipykernel install --user --name=pyblio
 jupyter lab
 # Open the pybliometrics notebook and 
 # switch to pyblio environment using the dropdown on top-right 
+
+
